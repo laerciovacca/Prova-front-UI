@@ -1,16 +1,19 @@
 # Lista de filmes 
 
-One Paragraph of project description goes here
+consumindo a API https://swapi.co/api/films, usando
 
-## Getting Started
-### Prerequisites
+angular.js
+bootstrap
+javascript
+html
 
-What things you need to install the software and how to install them
+
 
 ```
-Clone o repositorio.
+Baixe o projeto.
+Rodar
 npm install
 gulp server
 ```
 
-### Installing
+
