@@ -1,0 +1,38 @@
+<form class="formCadastro" name="formCadastro" ng-submit="validaForm(formCadastro.$valid)">
+      <div class="form-group" ng-class="{'has-error' : formCadastro.nome.$invalid && !formCadastro.nome.$pristine}">
+        <label for="formGroupExampleInput">Nome</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" name="nome" ng-model="usuario.nome" placeholder="Escreva seu nome" required>
+        <p ng-show="formCadastro.nome.$invalid && !formCadastro.nome.$pristine && submitted" class="help-block">Seu nome é obrigatório</p>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" ng-model="usuario.email" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escreva seu e-mail" required>
+        <p ng-show="formCadastro.email.$invalid && !formCadastro.email.$pristine && submitted" class="help-block">Informe um e-mail válido.</p>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensagem</label>
+        <textarea ng-model="usuario.mensagem" class="form-control" id="exampleFormControlTextarea1" name="mensagem" rows="3" required></textarea>
+        <p ng-show="formCadastro.mensagem.$invalid && !formCadastro.mensagem.$pristine && submitted" class="help-block">Campo Obrigatorio.</p>
+      </div>
+
+      <button type="Submit" class="btn btn-primary" ng-disabled="formCadastro.$invalid">Cadastrar</button>
+    </form>   
+      <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome lalalal</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mensagem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="usuario in usuarios">
+      <td>{{usuario.nome}}</td>
+      <td>{{usuario.email}}</td>
+      <td>{{usuario.mensagem}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+    </div>

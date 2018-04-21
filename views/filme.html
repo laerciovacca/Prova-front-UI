@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row" ng-controller="mostrarFilme">
+        <div class="col-sm-3">
+            <div class="card">
+                <img class="card-img-top" src="../assets/img/episode_id_{{filme.episode_id}}.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{filme.title}}</h5>
+                    <!--p class="card-text">
+                        {{filme.opening_crawl}}
+                    </p-->
+                    <a ng-href='#/filme' ng-click="ID_FILME(filme.episode_id)" class="btn btn-primary id_do_filme">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div> 

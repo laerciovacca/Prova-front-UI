@@ -1,0 +1,9 @@
+.formCadastro{
+	padding: 5% 0 5% 0;
+}
+.master-nav-form{ padding: 5% 0 5% 0; position: relative;}
+.nav-right{
+	position: absolute;
+	right: 0px;
+	text-align: right;
+}
